@@ -52,21 +52,24 @@ body {
   height: 25px;
   outline: 1px solid #ccc;
 }
-.square {
-  background: #2c82c9;
+.oBlock {
+  background: #ffcc01;
 }
-.bar {
-  background: salmon;
+.iBlock {
+  background: #33cc98;
 }
-.tree {
-  background: #67c23a;
+.tBlock {
+  background: #996799;
 }
-.zee {
-  background: #e6a23c;
+.zBlock {
+  background: #e61c34;
 }
-.elLeft {
-  background: #8e44ad;
+.sBlock {
+  background: #99cc32;
 }
-.elRight {
-  background: #16a085;
+.jBlock {
+  background: #2988b8;
+}
+.lBlock {
+  background: #ff9934;
 }
