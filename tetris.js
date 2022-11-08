@@ -32,6 +32,7 @@ function init() {
     prependNewLine();
   }
   generateNewBlock();
+  scoreDisplay.innerText = 0;
 }
 
 function prependNewLine() {
