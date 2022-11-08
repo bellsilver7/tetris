@@ -33,6 +33,7 @@ function init() {
   }
   generateNewBlock();
   scoreDisplay.innerText = 0;
+  duration = 500;
 }
 
 function prependNewLine() {
@@ -106,6 +107,7 @@ function checkMatch() {
       prependNewLine();
       score++;
       scoreDisplay.innerText = score;
+      if (score % 50 === 0) duration -= 100;
     }
   });
   generateNewBlock();
@@ -180,8 +182,9 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-restartButton.addEventListener("click", () => {
+function restart() {
   playground.innerHTML = "";
   gameText.style.display = "none";
   init();
-});
+}
+restartButton.addEventListener("click", restart);
