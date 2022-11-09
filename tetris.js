@@ -5,6 +5,7 @@ const playground = document.querySelector(".playground > ul");
 const gameText = document.querySelector(".game-text");
 const scoreDisplay = document.querySelector(".score");
 const restartButton = document.querySelector(".game-text > button");
+const pauseButton = document.querySelector("#pauseBtn");
 
 // Setting
 const GAME_ROWS = 20;
@@ -156,6 +157,12 @@ function dropBlock() {
 }
 
 function showGameOverText() {
+  gameText.textContent = "게임오버";
+  gameText.style.display = "flex";
+}
+
+function showGamePause() {
+  gameText.textContent = "일시정지";
   gameText.style.display = "flex";
 }
 
@@ -187,4 +194,10 @@ function restart() {
   gameText.style.display = "none";
   init();
 }
+
+function pause() {
+  showGamePause();
+}
+
 restartButton.addEventListener("click", restart);
+pauseBtn.addEventListener('click', pause)
